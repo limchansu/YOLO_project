@@ -14,7 +14,7 @@ This module contains functionality related to CCTV operations, including time da
 
 This module includes functionality related to a calculator, including time data retrieval using a YOLO model.
 
-## Server Program (server.py)
+## Server Program (paymentRecord Directory)
 
 The server program receives time data from both CCTV and Calculator modules and performs the following actions based on user input:
 
