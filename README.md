@@ -1,4 +1,4 @@
-# YOLO_project
+`# YOLO_project
 
 # CCTV and Calculator Integration with Server
 
@@ -8,15 +8,16 @@ This project demonstrates an integration between CCTV and Calculator modules usi
 
 ### cctv.py
 
-This module contains functionality related to CCTV operations, including time data retrieval using a YOLO model.
+Check the time and send it to the server only when a person is taken for the first time and the last time
 
 ### calculator.py
 
-This module includes functionality related to a calculator, including time data retrieval using a YOLO model.
+Whenever an item is photographed, it shows the output of 'Do you want to calculate?' and when you press yes, it sends the user's calculated time to the server
 
 ## Server Program (paymentRecord Directory)
 
-The server program receives time data from both CCTV and Calculator modules and performs the following actions based on user input:
+Compare each of the time data received from CCTV.py and Calculator.py.
+If the calculator's time data is not included in the time data interval taken on CCTV, it consists of two buttons
 
 - **Click Mismatched:** Compares CCTV time data with Calculator time data. If they match, nothing is printed. If they don't match, it prints the CCTV time data.
   
